@@ -34,6 +34,10 @@ public class suinanANLabExer21 {
         boolean hz = sumHorizontal(inputs);
         boolean vz = sumVertical(inputs);
         boolean diag = sumDiagonal(inputs);
+        if(hz && vz && diag)
+            System.out.println("Correct");
+        else
+            System.out.println("Wrong");
     }
     public static void printInputs(int[] inputs){
         int y = 0;
@@ -56,11 +60,9 @@ public class suinanANLabExer21 {
         for(int x=0; x<inputs.length; x++) {
             if(x%3==0 && x!=0){
                 int sum = 0;
-                for(int y=x; y>x-3; y--){
-                    sum+=inputs[x];
-                     
-                }
-               
+                for(int y=x; y>x-3; y--){                   
+                    sum+=inputs[y];             
+                }                 
                 if (sum!=15){
                     return false;
                 }
@@ -69,9 +71,22 @@ public class suinanANLabExer21 {
         return true;
     }
     public static boolean sumVertical(int[] inputs) {
-        return false;
+        int limit = inputs.length / 3;
+        for(int x=1; x<=limit; x++) {
+            int sum = 0;
+            for(int y=x; y<inputs.length; y+=3){
+                sum+=inputs[y];
+            }
+            if(sum!=15)
+                    return false;
+        }
+        return true;
     }
     public static boolean sumDiagonal(int[] inputs) {
-        return false;
+        int sum = inputs[1] + inputs[5] + inputs[9];
+        int sum2 = inputs[3] + inputs[5] + inputs[7];
+        if (sum!=15 && sum2!=15)
+            return false;
+        return true;
     }
 }
