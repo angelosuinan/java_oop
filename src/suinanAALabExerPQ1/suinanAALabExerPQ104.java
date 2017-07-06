@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package suinanAALabPR2;
+package suinanAALabExerPQ1;
 
 /**
  *
  * @author suinan
  */
-public class suinanAALabExerP204 {
+public class suinanAALabExerPQ104 {
     public static void main(String[] args) {
         double value = 0.5326;
         double sinx = Math.sin(value);

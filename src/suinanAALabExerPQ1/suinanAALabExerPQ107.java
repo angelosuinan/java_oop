@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package suinanAALabPR2;
+package suinanAALabExerPQ1;
 
 import java.io.*;
 
@@ -11,7 +11,7 @@ import java.io.*;
  *
  * @author suinan
  */
-public class suinanANLabExerP207 {
+public class suinanAALabExerPQ107 {
     public static void main(String[] args) throws Exception {
         System.out.print("Input the cents: ");
         int input = 0;

@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package suinanAALabPR2;
+package suinanAALabExerPQ1;
 import java.io.*;
 /**
  *
  * @author suinan
  */
-public class suinanANLabExerP208 {
+public class suinanAALabExerPQ108 {
     public static void main(String[] args) throws Exception{
         BufferedReader dataIn = new BufferedReader(new InputStreamReader(System.in));
 
