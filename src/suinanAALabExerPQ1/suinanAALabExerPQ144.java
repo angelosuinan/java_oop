@@ -5,10 +5,16 @@
  */
 package suinanAALabExerPQ1;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 /**
  *
  * @author suinan
  */
 public class suinanAALabExerPQ144 {
-    
+    public static void main(String[] args) throws Exception {
+        BufferedReader dataIn = new BufferedReader(new InputStreamReader(System.in));
+        
+    }
 }
