@@ -21,7 +21,7 @@ public class suinanAALabExerP216 {
                 int temp = data[row][col];        
                 data[row][col] = data[row][data[row].length - 1 - col];
                 data[row][data[row].length - 1 - col] = temp;
-
+                System.out.println(data[row][col]);
             }
      
            
