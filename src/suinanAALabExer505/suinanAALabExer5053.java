@@ -5,6 +5,8 @@
  */
 package suinanAALabExer505;
 import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 /**
  *
  * @author suinan
@@ -17,6 +19,11 @@ class ColoredFrame extends Frame {
         setSize(350,100);
         setLocation(x,y);
         setVisible(true);
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent we) {
+                dispose();
+            }
+        });
     }
 }
 

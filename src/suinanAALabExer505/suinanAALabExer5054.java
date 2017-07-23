@@ -5,6 +5,8 @@
  */
 package suinanAALabExer505;
 import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 /**
  *
  * @author suinan
@@ -20,6 +22,11 @@ class ButtonFrame1 extends Frame {
         button = new Button("Click Me!");
         add(button);
         setVisible(true);
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent we) {
+                dispose();
+            }
+        });
     }
 }
 public class suinanAALabExer5054 {

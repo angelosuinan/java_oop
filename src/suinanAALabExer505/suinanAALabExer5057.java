@@ -5,6 +5,8 @@
  */
 package suinanAALabExer505;
 import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 /**
  *
  * @author suinan
@@ -21,6 +23,11 @@ class ButtonFrame4 extends Frame {
         add(new Button("Michigan"),BorderLayout.WEST);
         add(new Button("Huron"),BorderLayout.CENTER);
         setVisible(true);
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent we) {
+                dispose();
+            }
+        });
     }
 }
 public class suinanAALabExer5057 {

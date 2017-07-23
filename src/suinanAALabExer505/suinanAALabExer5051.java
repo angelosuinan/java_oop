@@ -17,5 +17,6 @@ public class suinanAALabExer5051 {
         frame.setResizable(false);
         frame.setVisible(true);
         System.out.println("To quit, click on this window and press Ctrl+C");
+        
     }
 }
