@@ -21,3 +21,5 @@ nbproject/*
 *.lock
 *.rar
 *.zip
+/src/punzalanDMLabExer506/nbproject/private/
+/src/punzalanDMLabExer507/nbproject/private/
